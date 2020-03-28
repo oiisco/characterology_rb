@@ -1,18 +1,24 @@
-# typed: true
+# frozen_string_literal: true 
+
+# typed: true 
 module API
   module V1
     class Base < Grape::API
+        extend T::Sig
+
       version 'v1', using: :path, vendor: 'api'
       default_format :json
 
       module Success
-        def self.call(object, _env)
+        sig { params(message: String).returns(JSON) }
+        def self.call(object)
           { status: 'success', data: object }.to_json
         end
       end
 
       module Failure
-        def self.call(message, _backtrace, _options, _env)
+        sig { params(message: String).returns(JSON) }
+        def self.call(message)
           { status: 'error', messages: message }.to_json
         end
       end
@@ -20,6 +26,7 @@ module API
       namespace :patient do
         mount Patient::Questions::Root
       end
-    end
+    end 
   end
 end
+ 

@@ -13,6 +13,7 @@
 !/log/.keep
 !/tmp/.keep
 
+.history
 .idea
 
 # Ignore uploaded files in development.
