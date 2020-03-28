@@ -22,3 +22,5 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+/config/initializers/secret_token.rb
+/sorbet/rbi/hidden-definitions/errors.txt

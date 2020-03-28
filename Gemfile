@@ -23,7 +23,8 @@ gem 'grape'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
-
+gem 'sorbet-rails'
+gem 'sorbet-runtime'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
@@ -40,6 +41,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'reek'
   gem 'rubocop'
+  gem 'sorbet'
 end
 
 group :test do

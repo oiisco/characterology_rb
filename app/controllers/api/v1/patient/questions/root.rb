@@ -1,3 +1,4 @@
+# typed: strict
 module API
   module V1
     module Patient
