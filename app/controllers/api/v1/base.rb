@@ -1,10 +1,10 @@
-# frozen_string_literal: true 
+# frozen_string_literal: true
 
-# typed: true 
+# typed: true
 module API
   module V1
     class Base < Grape::API
-        extend T::Sig
+      extend T::Sig
 
       version 'v1', using: :path, vendor: 'api'
       default_format :json
@@ -26,7 +26,6 @@ module API
       namespace :patient do
         mount Patient::Questions::Root
       end
-    end 
+    end
   end
 end
- 

@@ -2,6 +2,6 @@
 
 # typed: strict
 class ApplicationMailer < ActionMailer::Base
-  default from: 'from@example.com'
+  default from: 'system@charakterologia.pl'
   layout 'mailer'
 end
