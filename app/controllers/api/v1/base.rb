@@ -18,8 +18,8 @@ module API
         end
       end
 
-      namespace :patient do
-        mount Patient::Questions::Root
+      namespace :common do
+        mount Common::Questions::Root
       end
     end
   end

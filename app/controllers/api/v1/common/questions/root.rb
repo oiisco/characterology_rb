@@ -2,7 +2,7 @@
 
 module API
   module V1
-    module Patient
+    module Common
       module Questions
         class Root < Grape::API
           version 'v1', using: :path, vendor: 'api'

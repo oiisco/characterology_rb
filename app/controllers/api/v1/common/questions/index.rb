@@ -2,13 +2,14 @@
 
 module API
   module V1
-    module Patient
+    module Common
       module Questions
         class Index < Grape::API
           desc 'Returns all exam questions'
 
           get '/' do
-            Question.order(:priority)
+            questions = Question.order(:priority)
+            present questions, with: ::Common::QuestionsEntity
           end
         end
       end
