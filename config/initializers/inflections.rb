@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-# typed: strict
 # Be sure to restart your server when you modify this file.
 
 # Add new inflection rules using the following format. Inflections
@@ -19,5 +18,5 @@
 # end
 
 ActiveSupport::Inflector.inflections(:en) do |inflect|
-  inflect.acronym 'API'
+  inflect.acronym('API')
 end

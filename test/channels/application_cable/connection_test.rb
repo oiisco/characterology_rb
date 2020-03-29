@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-# typed: strict
 require 'test_helper'
 
 class ApplicationCable::ConnectionTest < ActionCable::Connection::TestCase
