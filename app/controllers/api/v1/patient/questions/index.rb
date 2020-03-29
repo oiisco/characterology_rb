@@ -8,6 +8,7 @@ module API
           desc 'Returns all exam questions'
 
           get '/' do
+            Question.order(:priority)
           end
         end
       end
