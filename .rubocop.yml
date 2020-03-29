@@ -1,8 +1,18 @@
-Layout/LineLength:
-  Documentation:
-    Enabled: false
+Style/Documentation:
+  Description: 'Document classes and non-namespace modules.'
+  Enabled: false
+
+Metrics/BlockLength:
+  CountComments: true
+  Max: 25
+  ExcludedMethods: []
+  Exclude:
+    - "spec/**/*"
+
+AllCops:
   Exclude:
     - 'db/**/*'
     - 'config/**/*'
     - 'script/**/*'
     - 'bin/{rails,rake}'
+
